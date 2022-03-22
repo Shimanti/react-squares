@@ -1,7 +1,7 @@
-import React from "react"
+import React, {useState} from "react"
 
 export default function Box(props) {
-  const [on, setOn] = React.useState(props.on)
+  const [on, setOn] = useState(props.on)
 
   const toggle = () => setOn(prevOn => !prevOn)
 
